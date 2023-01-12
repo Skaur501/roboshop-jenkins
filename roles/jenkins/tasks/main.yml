@@ -3,7 +3,7 @@
       config: "{{ lookup('file', 'templates/single-pipeline.xml') }}"
       name: test
       password: admin123
-      url: https://localhost:8080
+      url: http://localhost:8080
       user: admin
 
 
