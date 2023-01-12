@@ -1,5 +1,5 @@
 - name: Create a template
-  ansible.builtin.template:
+  ansible.builtin.templates:
     src: s-pipeline.xml
     dest: /templates/s-pipeline.xml
 
