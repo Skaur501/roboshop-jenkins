@@ -1,8 +1,8 @@
 - name: Create a template
   ansible.builtin.template:
-    remote_src: true
     src: s-pipeline.xml
     dest: /template/s-pipeline.xml
+    remote_dest: true
 
 - name: Create a jenkins jobs using  basic authentication
   community.general.jenkins_job:
