@@ -12,7 +12,5 @@
     url: http://172.31.2.68:8080
     #user: sarabjeet310
     user: admin
-  loop:
-    - CI-Pipeline
 
 
