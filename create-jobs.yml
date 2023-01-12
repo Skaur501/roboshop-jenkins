@@ -1,4 +1,4 @@
 - name: Create a jenkins jobs using  basic authentication
   hosts: localhost
   roles:
-    - Jenkins
+  - jenkinsfile
