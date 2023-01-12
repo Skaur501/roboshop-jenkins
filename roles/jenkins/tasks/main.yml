@@ -1,5 +1,5 @@
 - name: Create jenkins jobs
-  hosts: all
+  hosts: localhost
   tasks:
   - name: Create a jenkins jobs using  basic authentication
     community.general.jenkins_job:
