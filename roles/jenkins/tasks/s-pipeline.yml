@@ -1,5 +1,7 @@
 - name: Create a template
+  become: true
   ansible.builtin.template:
+    remote_src: true
     src: s-pipeline.xml
     dest: /template/s-pipeline.xml
 
