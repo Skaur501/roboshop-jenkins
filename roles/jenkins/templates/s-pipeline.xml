@@ -17,7 +17,7 @@
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>https://github.com/Skaur501/{{COMPONENT}}.git</url>
+                    <url>https://github.com/Skaur501/jenkins.git</url>
                     <credentialsId>ssh</credentialsId>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
