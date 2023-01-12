@@ -1,0 +1,21 @@
+- name: Create a jenkins jobs using  basic authentication
+  community.general.jenkins_job:
+    config: "{{ lookup('file', 'templates/s-pipeline.xml') }}"
+    name: "CI-Pipeline/{{item}}"
+    password: 11aee1369b4389af204a8e88d2348ec7ca
+    url: http://172.31.2.68:8080
+    user: sarabjeet310
+  loop:
+    - CI-Pipeline
+
+- name: Include task list in play
+  ansible.builtin.include_tasks:
+    vars:
+      COMPONENT: "{{item}}"
+    loop:
+      - frontend
+      - catalogue
+      - cart
+      - users
+      - shipping
+      - payment
