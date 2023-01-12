@@ -9,13 +9,13 @@
     - CI-Pipeline
 
 - name: Include task list in play
-  ansible.builtin.include_tasks:
-    vars:
+  ansible.builtin.include_tasks: s-pipeline.yml
+  vars:
       COMPONENT: "{{item}}"
-    loop:
-      - frontend
-      - catalogue
-      - cart
-      - users
-      - shipping
-      - payment
+  loop:
+     - frontend
+     - catalogue
+     - cart
+     - users
+     - shipping
+     - payment
