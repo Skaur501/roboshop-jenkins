@@ -3,9 +3,9 @@
       config: "{{ lookup('file', 'templates/folder.xml') }}"
       name: "{{item}}"
       #password: 11aee1369b4389af204a8e88d2348ec7ca
-      password: admin123
+      password: 267287175
       url: http://172.31.10.150:8080
-      user: admin
+      user: sarbjeet310
   loop:
    - CI-Pipeline
 
